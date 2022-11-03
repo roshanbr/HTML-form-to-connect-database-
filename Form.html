@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Roshan B R" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+<body>
+    <form action="connect.php" method="post">
+        <fieldset>
+            <legend>Registration Form</legend>
+            <p>
+                <label for="first_name">First Name: </label>
+                <input type="text" name="firstname" id="firstname" required/>
+            </p>
+            <p>
+                <label for="last_name">Last Name: </label>
+                <input type="text" name="lastname" id="lastname" required/>
+            </p>
+            <p>
+                <label for="email">Email: </label>
+                <input type="text" name="email" id="email" required/>
+            </p>
+            <p>
+                <label for="gender">Gender</label><br>
+                <input type="radio" name="gender" value="m" id="male" required><label>mail</label>
+                <input type="radio" name="gender" value="f" id="female" required><label for="femail">femail</label>
+                <input type="radio" name="gender" value="o" id="other" required><label for="other">other</label>
+            </p>
+            <input type="submit" id="submit">
+        </fieldset>
+    </form>
+</body>
+</html>
